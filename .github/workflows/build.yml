@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install Frontend Dependencies
         run: |
-          ./gradlew pnpmInstall --no-frozen-lockfile
+          ./gradlew pnpmInstall
       - name: Build with Gradle
         run: |
           # Set the version with tag name when releasing
